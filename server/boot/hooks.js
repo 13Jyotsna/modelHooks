@@ -17,13 +17,13 @@ module.exports = function(app, cb) {
     }, cb);
   }
 
-  function updateModel(coffeeShop, cb) {
+  function updateModel(person, cb) {
     console.log('\n----- Updating a model -----');
-    coffeeShop.updateAttribute('address', '', cb);
+    person.updateAttribute('address', '', cb);
   }
 
-  function destroyModel(coffeeShop, cb) {
+  function destroyModel(person, cb) {
     console.log('\n----- Destroying a model -----');
-    coffeeShop.destroy(cb);
+    person.destroy(cb);
   }
 };
